@@ -1,0 +1,187 @@
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+<title>61微站</title>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/static/css/base.css"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/static/css/module.css"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/static/css/login.css"/>
+<script type="text/javascript" src="__PUBLIC__/static/js/jquery.js"></script>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+
+<?php
+session_start();
+if($_POST){
+	
+	if($_POST['mobile']!=$_SESSION['mobile'] or $_POST['mobile_code']!=$_SESSION['mobile_code'] or empty($_POST['mobile']) or empty($_POST['mobile_code'])){
+		exit('手机验证码输入错误。');	
+	}else{
+		$_SESSION['mobile'] = '';
+		$_SESSION['mobile_code'] = '';	
+		exit('注册成功。');	
+	}
+}
+function random($length = 6 , $numeric = 0) {
+	PHP_VERSION < '4.2.0' && mt_srand((double)microtime() * 1000000);
+	if($numeric) {
+		$hash = sprintf('%0'.$length.'d', mt_rand(0, pow(10, $length) - 1));
+	} else {
+		$hash = '';
+		$chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789abcdefghjkmnpqrstuvwxyz';
+		$max = strlen($chars) - 1;
+		for($i = 0; $i < $length; $i++) {
+			$hash .= $chars[mt_rand(0, $max)];
+		}
+	}
+	return $hash;
+}
+$_SESSION['send_code'] = random(6,1);
+?>
+
+
+
+
+    <div class="container-login">
+        <div class="header">
+            <div class="logo"><img src="__PUBLIC__/static/images/logo-regg_03.png" alt=""/></div>
+            <div class="poster-page"><img src="__PUBLIC__/static/images/poster_07.png" alt=""/></div>
+        </div>
+        <div class="main">
+            <form action="__PUBLIC__/reg.php" method="post" name="formUser">
+                <ul class="l-form-login">
+                    <li class="error-form-login">请输入有效的手机号</li>
+                    <li class="li-form-login">
+                        <input class="itxt-form-login" name="mobile" type="text" value="" placeholder="请输入手机号" />
+                    </li>
+                    <li class="li-form-login">
+                        <input class="itxt-get-login" name="mobile_code" type="text" value="" placeholder="请输入您的验证码" />
+                        <!--<button class="btn-get-login">获取验证码</button>-->
+                        <input class="btn-get-login" id="zphone" type="button" onClick="get_mobile_code();">获取验证码</input>
+                        
+                    </li>
+                    <li class="li-form-login">
+                        <input class="itxt-form-login" name="" type="password" placeholder="请输入您的密码" />
+                    </li>
+                    <li class="li-form-login">
+                        <input class="itxt-form-login" name="" type="password" placeholder="请确认您的密码" />
+                    </li>
+                    <li class="submit-form-login">
+                        <input class="btn-submit-regis" type="submit" value="创建微站" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <footer class="footer">
+            <p class="txt-footer-login">请扫二维码关注我们的公众号<br />了解我们的最新动态及功能</p>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="__PUBLIC__/reg.php" method="post" name="formUser">
+	<table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3">
+		<tr>
+			<td align="right">手机<td>
+		<input id="mobile" name="mobile" type="text" size="25" class="inputBg" /><span style="color:#FF0000"> *</span> 
+        <input id="zphone" type="button" value=" 获取手机验证码 " onClick="get_mobile_code();"></td>
+        </tr>
+		<tr>
+			<td align="right">验证码</td>
+			<td><input type="text" size="8" name="mobile_code" class="inputBg" /></td>
+		</tr>
+		<tr>
+			<td align="right"></td>
+			<td><input type="submit" value=" 注册 " class="button"></td>
+		</tr>
+	</table>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+	function get_mobile_code(){
+      
+        $.post('__PUBLIC__/sms.php', {mobile:jQuery.trim($('#mobile').val()),send_code:<?php echo $_SESSION['send_code'];?>},
+        function(msg) {
+            alert(jQuery.trim(unescape(msg)));
+			if(msg=='提交成功'){
+				RemainTime();
+			}
+        });   
+	}; 
+	var iTime = 59;
+	var Account;
+	function RemainTime(){
+		document.getElementById('zphone').disabled = true;
+		var iSecond,sSecond="",sTime="";
+		if (iTime >= 0){
+			iSecond = parseInt(iTime%60);
+			iMinute = parseInt(iTime/60)
+			if (iSecond >= 0){
+				if(iMinute>0){
+					sSecond = iMinute + "分" + iSecond + "秒";
+				}else{
+					sSecond = iSecond + "秒";
+				}
+			}
+			sTime=sSecond;
+			if(iTime==0){
+				clearTimeout(Account);
+				sTime='获取手机验证码';
+				iTime = 59;
+				document.getElementById('zphone').disabled = false;
+			}else{
+				Account = setTimeout("RemainTime()",1000);
+				iTime=iTime-1;
+			}
+		}else{
+			sTime='没有倒计时';
+		}
+		document.getElementById('zphone').value = sTime;
+	}	
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

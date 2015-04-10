@@ -1,0 +1,16 @@
+<html>
+
+<head></head>
+
+<body>
+<form method="POST" action="__SELF__" onsubmit="return confirm('确定要生成吗？');">
+	<p>
+	生成的类型：
+	<input type="radio" name="type" value="1" />直接生成代码
+	<input type="radio" name="type" value="2" checked="checked" />直接生成配置文件
+	</p>
+	配置文件/表名：<input type="text" name="configName" size="60" /><br /><br />
+	如果要生成多个代码那么多个中间用，隔开
+<input type="submit" value="生成" />
+</form>
+</body></html>

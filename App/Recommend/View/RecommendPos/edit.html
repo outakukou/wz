@@ -1,0 +1,59 @@
+<!-- $Id: brand_info.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>管理中心 - 修改推荐位 </title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Js/jquery.validate.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Js/validate_zh_cn.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+<h1>
+    <span class="action-span"><a href="__CONTROLLER__/lst">推荐位列表</a></span>
+    <span class="action-span1"><a href="#">管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 修改推荐位 </span>
+    <div style="clear:both"></div>
+</h1>
+<div class="main-div">
+    <form name="dataForm" method="POST" action="__SELF__" enctype="multipart/form-data" >
+    	<input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+    	        <table cellspacing="1" cellpadding="3" width="100%">
+                       <tr>
+                <td class="label">推荐位名称</td>
+                <td>
+                                    <input value="<?php echo $data['pos_name']; ?>" type="text" name="pos_name" class="required" />
+                                
+                请输入                                	<span class="require-field">*</span>
+                                </td>
+            </tr>
+                      <tr>
+                <td class="label">推荐位的类型</td>
+                <td>
+                                	<input <?php if($data['pos_type']==商品) echo 'checked="checked"'; ?> type="radio" name="pos_type" value="商品" />商品                                	<input <?php if($data['pos_type']==商品分类) echo 'checked="checked"'; ?> type="radio" name="pos_type" value="商品分类" />商品分类                                
+                请选择一个                                	<span class="require-field">*</span>
+                                </td>
+            </tr>
+                      <tr>
+                <td colspan="2" align="center"><br />
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div id="footer"></div>
+</body>
+</html>
+<script>
+$("form[name=dataForm]").validate();
+</script>

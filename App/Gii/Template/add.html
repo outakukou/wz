@@ -1,0 +1,82 @@
+<!-- $Id: brand_info.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>管理中心 - 添加<?php echo $config['tableCnName']; ?> </title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Js/jquery.validate.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Js/validate_zh_cn.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+<h1>
+    <span class="action-span"><a href="__CONTROLLER__/lst"><?php echo $config['tableCnName']; ?>列表</a></span>
+    <span class="action-span1"><a href="#">管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 添加<?php echo $config['tableCnName']; ?> </span>
+    <div style="clear:both"></div>
+</h1>
+<div class="main-div">
+    <form name="dataForm" method="POST" action="__SELF__" enctype="multipart/form-data" >
+        <table cellspacing="1" cellpadding="3" width="100%">
+        <?php foreach ($config['fields'] as $k => $v): ?>
+            <tr>
+                <td class="label"><?php echo $v['text']; ?></td>
+                <td>
+                <?php if($v['type'] == 'text'): ?>
+                    <input type="text" name="<?php echo $k; ?>" class="<?php echo $v['class']; ?>" />
+                <?php elseif($v['type'] == 'password'): ?>
+                    <input type="password" name="<?php echo $k; ?>" class="<?php echo $v['class']; ?>" />
+                <?php elseif ($v['type'] == 'file'): ?>
+                	<input type="file" name="<?php echo $k; ?>" class="<?php echo $v['class']; ?>" />
+                <?php elseif ($v['type'] == 'select'): ?>
+                	<?php echo "<?php {$v['dataSource'][0]} ?>" ?>
+                	<select name="<?php echo $k; ?>" class="<?php echo $v['class']; ?>">
+                		<option value="0">请选择</option>
+                		<?php echo "<?php foreach (\$_selData as \$k => \$v): ?>"; ?>
+                			<?php echo "<option value=\"<?php echo \$v['{$v['dataSource'][1]}']; ?>\"><?php echo \$v['{$v['dataSource'][2]}']; ?></option>"; ?>
+                		<?php echo "<?php endforeach; ?>"; ?>
+                	</select>
+                <?php elseif ($v['type'] == 'html'): ?>
+                	<textarea id="<?php echo $k; ?>" name="<?php echo $k; ?>"></textarea>
+                <?php elseif ($v['type'] == 'radio'): 
+                		$_i = 0;
+                		foreach ($v['radioOptionValue'] as $k1 => $v1): ?>
+                	<input type="radio" name="<?php echo $k; ?>" value="<?php echo $k1; ?>" <?php if($_i==0) echo 'checked="checked"'; ?> /><?php echo $v1; ?>
+                <?php $_i++;endforeach;endif; ?>
+                <?php echo $v['tip']; ?>
+                <?php if(strpos($v['class'], 'required') !== FALSE): ?>
+                	<span class="require-field">*</span>
+                <?php endif; ?>
+                </td>
+            </tr>
+          <?php endforeach; ?>
+            <tr>
+                <td colspan="2" align="center"><br />
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div id="footer"></div>
+</body>
+</html>
+<script>
+$("form[name=dataForm]").validate();
+<?php foreach ($config['fields'] as $k => $v):
+	if($v['type'] == 'html'): ?>
+UE.getEditor('<?php echo $k; ?>', {
+	"initialFrameWidth" : "700",
+	"initialFrameHeight" : "500",
+	"maximumWords" : 30000,
+});
+<?php endif; endforeach; ?>
+</script>

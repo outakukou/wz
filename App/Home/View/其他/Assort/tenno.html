@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>奥伦达</title>
+    <link rel="stylesheet" href="__PUBLIC__/static/css/base.css"/>
+    <!--<link rel="stylesheet" href="__PUBLIC__/static/css/layout.css"/>-->
+    <link rel="stylesheet" href="__PUBLIC__/static/css/layoutjohn.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/static/css/module.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/static/css/dialog.css"/>
+    <!--<link rel="stylesheet" href="__PUBLIC__/static/css/unit.css"/>-->
+    <link rel="stylesheet" href="__PUBLIC__/static/css/function.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/static/css/media.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/static/css/unitjohn.css"/>
+    
+    <link href="__PUBLIC__/static/plugins/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/static/js/jquery-1.11.1.min.js"></script>
+
+</head>
+<body class="body-index">
+<div class="ald-pc">
+<div class="container-index">
+<img src="__PUBLIC__/static/images/fg/bg-matching.jpg" alt=""/>
+<div class="box-content-index">
+    <header class="index">
+        <h1 class="logo-index"><a href="javascript:void(0);"><img src="__PUBLIC__/static/images/fg/logo-index_03.png" alt=""/></a></h1>
+        <div class="intro-hdr-index"><img src="__PUBLIC__/static/images/fg/intro-hdr-index_10.png" alt=""/></div>
+    </header>
+    <div class="content-index c">
+        <div class="bg-main-index">
+            <img src="__PUBLIC__/static/images/fg/bg-main_03.png" alt=""/>
+        </div>
+        <div class="main-index">
+             
+            <h2 class="path">
+                <a href="__MODULE__/Homead/lst" >首页</a>
+                <span class="part-path">></span>              
+                <a href="__MODULE__/Assort/tenno">度假配套</a>
+               
+                <span class="part-path">></span>
+               
+                <a href="__MODULE__/Assort/tenno">天皇山</a>
+                
+                </h2>            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="box-banner">
+                <img src="__PUBLIC__/static/images/fg/bg-banner_10.png" alt=""/>
+                <div class="banner-single">
+                    <div class="center-banner-single">
+                        <ul class="l-banner-single">
+
+                            
+     <?php foreach($data as $k=>$v):?>
+            <?php if($k == 0){ 
+            $class = 'class="li-banner-single "';
+             }else{
+           $class = 'class="li-banner-single none"';
+            }
+                                  
+         ?>                                
+                            <li <?php echo $class;?>><img src="<?php echo IMG_URL . $v['pic'];?>" alt=""/></li>
+<!--                            <li class="li-banner-single none"><img src="__PUBLIC__/static/images/fg/img-mutiple_03.jpg" alt=""/></li>
+                            <li class="li-banner-single none"><img src="__PUBLIC__/static/images/fg/img-mutiple_03.jpg" alt=""/></li>
+                            <li class="li-banner-single none"><img src="__PUBLIC__/static/images/fg/img-mutiple_03.jpg" alt=""/></li>
+                            <li class="li-banner-single none"><img src="__PUBLIC__/static/images/fg/img-mutiple_03.jpg" alt=""/></li>
+                            <li class="li-banner-single none"><img src="__PUBLIC__/static/images/fg/img-mutiple_03.jpg" alt=""/></li>
+                            <li class="li-banner-single none"><img src="__PUBLIC__/static/images/fg/img-mutiple_03.jpg" alt=""/></li>
+                            <li class="li-banner-single none"><img src="__PUBLIC__/static/images/fg/img-mutiple_03.jpg" alt=""/></li>-->
+
+<?php endforeach;?>
+                        </ul>
+                        <!--
+                        <div class="mod-mini-mutiple">
+                            <span class="up-mini-mutiple"><img src="__PUBLIC__/static/images/fg/arrow-mini_05.png" alt=""/></span>
+                            <ul class="l-mini-mutiple">
+                                <li class="li-mini-mutiple" the-ndx="0"><span class="poster-mini-mutiple" origin-img="__PUBLIC__/static/images/fg/compass_05.png"><img src="__PUBLIC__/static/images/fg/mini-mutiple_03.jpg" alt=""/></span></li>
+                                <li class="li-mini-mutiple" the-ndx="1"><span class="poster-mini-mutiple" origin-img="__PUBLIC__/static/images/fg/img-mini_03.png"><img src="__PUBLIC__/static/images/fg/mini-mutiple_03.jpg" alt=""/></span></li>
+                                <li class="li-mini-mutiple" the-ndx="2"><span class="poster-mini-mutiple" origin-img="__PUBLIC__/static/images/fg/map_03.png"><img src="__PUBLIC__/static/images/fg/mini-mutiple_03.jpg" alt=""/></span></li>
+                                <li class="li-mini-mutiple" the-ndx="3"><span class="poster-mini-mutiple" origin-img="__PUBLIC__/static/images/fg/dec-barrel_03.png"><img src="__PUBLIC__/static/images/fg/mini-mutiple_03.jpg" alt=""/></span></li>
+                                <li class="li-mini-mutiple" the-ndx="4"><span class="poster-mini-mutiple" origin-img="__PUBLIC__/static/images/fg/dec-board_02.png"><img src="__PUBLIC__/static/images/fg/mini-mutiple_03.jpg" alt=""/></span></li>
+                                <li class="li-mini-mutiple none" the-ndx="5"><span class="poster-mini-mutiple" origin-img="__PUBLIC__/static/images/fg/logo_03.png"><img src="__PUBLIC__/static/images/fg/mini-mutiple_03.jpg" alt=""/></span></li>
+                                <li class="li-mini-mutiple none" the-ndx="6"><span class="poster-mini-mutiple" origin-img="__PUBLIC__/static/images/fg/scenic-b_03.png"><img src="__PUBLIC__/static/images/fg/mini-mutiple_03.jpg" alt=""/></span></li>
+                                <li class="li-mini-mutiple none" the-ndx="7"><span class="poster-mini-mutiple" origin-img="__PUBLIC__/static/images/fg/dec-circular_02.png"><img src="__PUBLIC__/static/images/fg/mini-mutiple_03.jpg" alt=""/></span></li>
+                            </ul>
+                            <span class="down-mini-mutiple"><img src="__PUBLIC__/static/images/fg/arrow-mini_03.png" alt=""/></span>
+                        </div>
+                        -->
+                        <!--
+                        <ul class="l-mbtn-page">
+                            <li class="li-mbtn-page up"><img src="__PUBLIC__/static/images/fg/arrow-banner_03.png" alt=""/></li>
+                            <li class="li-mbtn-page down"><img src="__PUBLIC__/static/images/fg/arrow-banner_05.png" alt=""/></li>
+                        </ul>
+                        -->
+                        <ul class="l-btn-banner mt0">
+                            <li class="li-btn-banner up">
+                                <img alt="" src="__PUBLIC__/static/images/fg/arrow-banner_03.png" />
+                            </li>
+                            <li class="li-btn-banner down">
+                                <img alt="" src="__PUBLIC__/static/images/fg/arrow-banner_05.png" />
+                            </li>
+                        </ul>
+                        <ul class="l-dotted-single">
+                            
+                            
+          <?php foreach($data as $k=>$v):?>   
+            <?php if($k == 0){ 
+            $dottedimg = '__PUBLIC__/static/images/fg/btn-dotted_05.png';            
+             }else{
+           $dottedimg  ='__PUBLIC__/static/images/fg/btn-dotted_03.png';
+            }
+                                  
+         ?>                               
+                            <li class="li-dotted-single"><img src="<?php echo $dottedimg;?>" alt=""/></li>
+<!--                            <li class="li-dotted-single"><img src="__PUBLIC__/static/images/fg/btn-dotted_03.png" alt=""/></li>
+                            <li class="li-dotted-single"><img src="__PUBLIC__/static/images/fg/btn-dotted_03.png" alt=""/></li>
+                            <li class="li-dotted-single"><img src="__PUBLIC__/static/images/fg/btn-dotted_03.png" alt=""/></li>
+                            <li class="li-dotted-single"><img src="__PUBLIC__/static/images/fg/btn-dotted_03.png" alt=""/></li>
+                            <li class="li-dotted-single"><img src="__PUBLIC__/static/images/fg/btn-dotted_03.png" alt=""/></li>
+                            <li class="li-dotted-single"><img src="__PUBLIC__/static/images/fg/btn-dotted_03.png" alt=""/></li>
+                            <li class="li-dotted-single"><img src="__PUBLIC__/static/images/fg/btn-dotted_03.png" alt=""/></li>-->
+
+
+<?php endforeach;?>
+                        </ul>
+                        <span class="magnifier-banner"><img src="__PUBLIC__/static/images/fg/magnifier_03.png" alt=""/></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mod-txt-index">
+                <span class="hr-txt-index"><img src="__PUBLIC__/static/images/fg/hr_43.png" alt=""/></span>
+               
+                
+     <?php foreach($data as $k=>$v):?>
+            <?php if($k == 0){ 
+            $class = 'class="article-index"';
+             }else{
+           $class = 'class="article-index none"';
+            }
+                                  
+         ?>                    
+                
+                <div <?php echo $class;?>>
+                    <h3 class="title-article-index"><?php echo $v[goods_title];?></h3>
+                    <p class="txt-article-index"><?php echo $v[goods_desc];?></p>
+                </div>
+<?php endforeach;?>  
+<!--                <div class="article-index none">
+                    <h3 class="title-article-index">私家山——天皇山2</h3>
+                    <p class="txt-article-index">5平方公里的天皇山景区作为项目的后花园，成为业主的私家山。山上群峰环绕，怪石嶙峋，草木葱郁，潭溪瀑布众多，常年水流不断。</p>
+                </div>
+                <div class="article-index none">
+                    <h3 class="title-article-index">私家山——天皇山3</h3>
+                    <p class="txt-article-index">5平方公里的天皇山景区作为项目的后花园，成为业主的私家山。山上群峰环绕，怪石嶙峋，草木葱郁，潭溪瀑布众多，常年水流不断。</p>
+                </div>
+                <div class="article-index none">
+                    <h3 class="title-article-index">私家山——天皇山4</h3>
+                    <p class="txt-article-index">5平方公里的天皇山景区作为项目的后花园，成为业主的私家山。山上群峰环绕，怪石嶙峋，草木葱郁，潭溪瀑布众多，常年水流不断。</p>
+                </div>
+                <div class="article-index none">
+                    <h3 class="title-article-index">私家山——天皇山5</h3>
+                    <p class="txt-article-index">5平方公里的天皇山景区作为项目的后花园，成为业主的私家山。山上群峰环绕，怪石嶙峋，草木葱郁，潭溪瀑布众多，常年水流不断。</p>
+                </div>
+                <div class="article-index none">
+                    <h3 class="title-article-index">私家山——天皇山6</h3>
+                    <p class="txt-article-index">5平方公里的天皇山景区作为项目的后花园，成为业主的私家山。山上群峰环绕，怪石嶙峋，草木葱郁，潭溪瀑布众多，常年水流不断。</p>
+                </div>
+                <div class="article-index none">
+                    <h3 class="title-article-index">私家山——天皇山7</h3>
+                    <p class="txt-article-index">5平方公里的天皇山景区作为项目的后花园，成为业主的私家山。山上群峰环绕，怪石嶙峋，草木葱郁，潭溪瀑布众多，常年水流不断。</p>
+                </div>
+                <div class="article-index none">
+                    <h3 class="title-article-index">私家山——天皇山8</h3>
+                    <p class="txt-article-index">5平方公里的天皇山景区作为项目的后花园，成为业主的私家山。山上群峰环绕，怪石嶙峋，草木葱郁，潭溪瀑布众多，常年水流不断。</p>
+                </div>-->
+
+
+
+
+
+            </div>
+        </div>
+
+<nav class="index">
+                        <ul class="l-nav-index">
+                            <li class="li-nav-index index">
+                                <a class="link-nav-index" href="__MODULE__/Homead/lst"><img src="__PUBLIC__/static/images/fg/navigation_06.png" alt=""/></a>
+                                <!--<input class="dft-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation_06.png" />-->
+                                <!--<input class="hvr-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation-hover_06.png" />-->
+                            </li>
+                            <li class="li-nav-index environment ">
+                                <a class="link-nav-index" href="javascript:void(0);"><img src="__PUBLIC__/static/images/fg/navigation_09.png" alt=""/></a>
+                                <input class="dft-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation_09.png" />
+                                <input class="hvr-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation-hover_09.png" />
+                                <ul class="l-subnav-index">
+                                    <li class="li-subnav-index ">
+                                        <a class="link-subnav-index" href="__MODULE__/Jingbei/lst">京北无霾区</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Water/lst">优质水源地</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Scenery/lst ">周边名胜景区</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Route/lst">度假线路</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li-nav-index matching current">
+                                <a class="link-nav-index" href="javascript:void(0);"><img src="__PUBLIC__/static/images/fg/navigation-hover_11.png" alt=""/></a>
+								<!--
+                                <input class="dft-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation_11.png" />
+                                <input class="hvr-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation-hover_11.png" />
+								-->
+                                <ul class="l-subnav-index">
+                                    <li class="li-subnav-index current">
+                                        <a class="link-subnav-index" href="__MODULE__/Assort/tenno">天皇山</a>
+										<span class="cur-subnav-index"><img src="/Public/static/images/fg/bg-nav_21.png" alt=""></span>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Assort/street">西镇商街</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Assort/church">西镇教堂</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Assort/pub">西镇酒店</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Assort/wine">梦得惜诺红酒会所</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Assort/golf">27洞红酒会所</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Assort/turf">奥伦达部落马场</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Assort/aviation">国内首批航空小镇</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li-nav-index production">
+                                <a class="link-nav-index" href="javascript:void(0);"><img src="__PUBLIC__/static/images/fg/navigation_13.png" alt=""/></a>
+                                <input class="dft-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation_13.png" />
+                                <input class="hvr-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation-hover_13.png" />
+                                <ul class="l-subnav-index">
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Product/dream">梦得惜诺</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Product/bifoli">原乡比弗利</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Product/manor">奥伦达部落红酒庄园</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Product/house">原乡洋房</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Product/card">奥伦达部落度假卡</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li-nav-index about">
+                                <a class="link-nav-index" href="javascript:void(0);"><img src="__PUBLIC__/static/images/fg/navigation_15.png" alt=""/></a>
+                                <input class="dft-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation_15.png" />
+                                <input class="hvr-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation-hover_15.png" />
+                                <ul class="l-subnav-index">
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/About/intro">部落简介</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/About/blessed">幸福聚落</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/About/activity">活动掠影</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li-nav-index feed">
+                                <a class="link-nav-index" href="javascript:void(0);"><img src="__PUBLIC__/static/images/fg/navigation_17.png" alt=""/></a>
+                                <input class="dft-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation_17.png" />
+                                <input class="hvr-src" type="hidden" value="__PUBLIC__/static/images/fg/navigation-hover_17.png" />
+                                <ul class="l-subnav-index">
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Movement/herald">活动预告</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Movement/news">新闻动态</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                    <li class="li-subnav-index">
+                                        <a class="link-subnav-index" href="__MODULE__/Movement/timelimit">产品工期</a>
+                                        <span class="img-subnav-index"><img src="__PUBLIC__/static/images/fg/bg-nav_07.png" alt=""/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+        
+        <div class="angle-main">
+            <ul class="l-angle-main">
+                <li class="li-angle-main traffic"><img src="__PUBLIC__/static/images/fg/bg-aside_10.png" alt="交通路线图"/></li>
+                <li class="li-angle-main collection"><a rel="sidebar" href="javascript:void(0);" title="" onclick="addFavorite2()"><img src="__PUBLIC__/static/images/fg/bg-aside_17.png" alt="加入收藏"/></a></li>
+                <li class="li-angle-main contact"><img src="__PUBLIC__/static/images/fg/bg-aside_22.png" alt="联系我们"/></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<span class="dec-circular"><img src="__PUBLIC__/static/images/fg/dec-circular_02.png" alt=""/></span>
+<!--
+<div class="paper-index">
+    <img src="__PUBLIC__/static/images/fg/paper-matching_01.png" alt=""/>
+-->
+    <div id="footer">
+        <span class="tcode-ft-index"><img src="__PUBLIC__/static/images/fg/tcode-ft_36.png" alt=""/></span>
+        <div class="contact-ft-index"><img src="__PUBLIC__/static/images/fg/contact-ft_03.png" alt=""/></div>
+        <!--<p class="copyright c-red">京ICP备10048844号&nbsp;&nbsp;奥伦达部落 All rights reserved&nbsp;All&nbsp;rights&nbsp;reserved&nbsp;技术支持：<a target="_blank" href="http://www.61keji.com">六十一秒科技</a></p>-->
+        <p class="copyright c-red">京ICP备10048844号&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved&nbsp;奥伦达部落 &nbsp;技术支持：<a target="_blank" href="http://www.61keji.com">六十一秒科技</a></p>        
+    </div>
+<!--
+</div>
+-->
+</div>
+<script type="text/javascript">
+    //这里设置static前的路径
+    var staticPath;
+</script>
+<script type="text/javascript" src="__PUBLIC__/static/plugins/js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/plugins/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/plugins/js/jquery.mousewheel-3.0.6.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/plugins/js/jquery.mCustomScrollbar.min.js"></script>
+<!--公用js-->
+<script type="text/javascript" src="__PUBLIC__/static/js/public.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/js/init_pc.js"></script>
+<!--周边动画-->
+<!--<script type="text/javascript" src="__PUBLIC__/static/js/dec-animate.js"></script>-->
+<script type="text/javascript" src="__PUBLIC__/static/js/dec-animate-john.js"></script>
+<!--banner动画-->
+<script type="text/javascript" src="__PUBLIC__/static/js/banner.js"></script>
+<!--导航js-->
+<script type="text/javascript" src="__PUBLIC__/static/js/navigation-pc.js"></script>
+<!--主体角标js-->
+<script type="text/javascript" src="__PUBLIC__/static/js/angle.js"></script>
+<!--scroll 加载 ；动画加载-->
+<script type="text/javascript">
+    (function($){
+        $(window).load(function(){
+            //dec-animation
+            decMar();
+            //set scroll
+            $(".article-index").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+</div>
+<div class="ald-mobile">
+    <div class="wood-mobile"><img src="__PUBLIC__/static/images/mobile/wood-long.jpg" alt=""/></div>
+    <div class="paper-mobile"><img src="__PUBLIC__/static/images/mobile/bg-ald_02.png" alt=""/></div>
+    <header id="header" class="header-mobile">
+        <h2 class="tip-header-mobile">
+            <span class="txt-tip-mhdr"><img src="__PUBLIC__/static/images/mobile/txt-nav_04.png" alt=""/></span>
+            <img src="__PUBLIC__/static/images/mobile/logo-bg_37.png" alt=""/>
+        </h2>
+        <nav id="navigation" class="nav-content-header">
+            <ul class="l-nav-mhdr">
+                <li class="li-nav-mhdr">
+                    <img src="__PUBLIC__/static/images/mobile/bg-nav.png" alt=""/>
+                    <a class="link-nav-mdhr" hvr-img="__PUBLIC__/static/images/mobile/caidan_52.png" href="">天皇山</a>
+                </li>
+                <li class="li-nav-mhdr">
+                    <img src="__PUBLIC__/static/images/mobile/bg-nav.png" alt=""/>
+                    <a class="link-nav-mdhr" hvr-img="__PUBLIC__/static/images/mobile/caidan_53.png" href="">西镇商街</a>
+                </li>
+                <li class="li-nav-mhdr">
+                    <img src="__PUBLIC__/static/images/mobile/bg-nav.png" alt=""/>
+                    <a class="link-nav-mdhr" hvr-img="__PUBLIC__/static/images/mobile/caidan_54.png" href="">西镇教堂</a>
+                </li>
+                <li class="li-nav-mhdr">
+                    <img src="__PUBLIC__/static/images/mobile/bg-nav.png" alt=""/>
+                    <a class="link-nav-mdhr" hvr-img="__PUBLIC__/static/images/mobile/caidan_55.png" href="">西镇酒店</a>
+                </li>
+                <li class="li-nav-mhdr">
+                    <img src="__PUBLIC__/static/images/mobile/bg-nav.png" alt=""/>
+                    <a class="link-nav-mdhr" hvr-img="__PUBLIC__/static/images/mobile/caidan_56.png" href="">梦得惜诺红酒会所</a>
+                </li>
+                <li class="li-nav-mhdr">
+                    <img src="__PUBLIC__/static/images/mobile/bg-nav.png" alt=""/>
+                    <a class="link-nav-mdhr" hvr-img="__PUBLIC__/static/images/mobile/caidan_57.png" href="">27洞红酒会所</a>
+                </li>
+                <li class="li-nav-mhdr">
+                    <img src="__PUBLIC__/static/images/mobile/bg-nav.png" alt=""/>
+                    <a class="link-nav-mdhr" hvr-img="__PUBLIC__/static/images/mobile/caidan_58.png" href="">奥伦达部落马场</a>
+                </li>
+                <li class="li-nav-mhdr">
+                    <img src="__PUBLIC__/static/images/mobile/bg-nav.png" alt=""/>
+                    <a class="link-nav-mdhr" hvr-img="__PUBLIC__/static/images/mobile/caidan_59.png" href="">国内首批航空小镇</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-mobile">
+        <div id="banner" class="banner-mobile">
+            <ul class="l-banner-mobile">
+                <li class="li-banner-mobile"><img src="__PUBLIC__/static/images/mobile/img-banner-s_07.jpg" alt=""/></li>
+                <li class="li-banner-mobile none"><img src="__PUBLIC__/static/images/mobile/img-banner-s_07.jpg" alt=""/></li>
+                <li class="li-banner-mobile none"><img src="__PUBLIC__/static/images/mobile/img-banner-s_07.jpg" alt=""/></li>
+                <li class="li-banner-mobile none"><img src="__PUBLIC__/static/images/mobile/img-banner-s_07.jpg" alt=""/></li>
+                <li class="li-banner-mobile none"><img src="__PUBLIC__/static/images/mobile/img-banner-s_07.jpg" alt=""/></li>
+                <li class="li-banner-mobile none"><img src="__PUBLIC__/static/images/mobile/img-banner-s_07.jpg" alt=""/></li>
+            </ul>
+            <ul class="l-btn-mbnr">
+                <li class="li-btn-mbnr left"><img src="__PUBLIC__/static/images/mobile/btn-banner_07.png" alt=""/></li>
+                <li class="li-btn-mbnr right"><img src="__PUBLIC__/static/images/mobile/btn-banner_09.png" alt=""/></li>
+            </ul>
+            <ul class="l-dotted-mbnr" org-img="__PUBLIC__/static/images/mobile/dotted-banner_20.png" tar-img="__PUBLIC__/static/images/mobile/dotted-banner_22.png">
+                <li class="li-dotted-mbnr"><img src="__PUBLIC__/static/images/mobile/dotted-banner_22.png" alt=""/></li>
+                <li class="li-dotted-mbnr"><img src="__PUBLIC__/static/images/mobile/dotted-banner_20.png" alt=""/></li>
+                <li class="li-dotted-mbnr"><img src="__PUBLIC__/static/images/mobile/dotted-banner_20.png" alt=""/></li>
+                <li class="li-dotted-mbnr"><img src="__PUBLIC__/static/images/mobile/dotted-banner_20.png" alt=""/></li>
+                <li class="li-dotted-mbnr"><img src="__PUBLIC__/static/images/mobile/dotted-banner_20.png" alt=""/></li>
+                <li class="li-dotted-mbnr"><img src="__PUBLIC__/static/images/mobile/dotted-banner_20.png" alt=""/></li>
+            </ul>
+        </div>
+        <section class="mod-txt-mobile">
+            <h2 class="title-txt-mobile">私家山——天皇山</h2>
+        </section>
+    </div>
+    <div class="mod-contact-mobile t_p47">
+        <div class="bd-contact-mobile">
+            <span class="img-contact-mobile"><img src="__PUBLIC__/static/images/mobile/img-contact_04.png" alt=""/></span>
+            <p class="txt-contact-mobile">接待中心：北京市西城区北三环双秀公园内</br>京备666号&nbsp;&nbsp;奥伦达部落&nbsp;All&nbsp;rights&nbsp;reserved </p>
+            <section class="weixin-contact-mobile">
+                <h4 class="title-wx-cm">扫一扫&nbsp;立即关注！</h4>
+                <span class="tcode-wx-cm"><img src="__PUBLIC__/static/images/mobile/tcode_27.jpg" alt=""/></span>
+            </section>
+        </div>
+    </div>
+    <footer class="footer-mobile">
+        <div class="box-ft-mobile">
+            <img src="__PUBLIC__/static/images/mobile/footer-bg-content_02.png" alt=""/>
+            <ul class="l-nav-ftmoble">
+                <li class="li-nav-ftmoble ml">
+                    <a class="link-nav-ftmoble" href="javascript:void(0);">
+                        <span class="icon-nav-ftmoble"><img src="__PUBLIC__/static/images/mobile/icon-ft-mobile_03.png" alt=""/></span>
+                        <span class="txt-nav-ftmoble">首&nbsp;&nbsp;页</span>
+                    </a>
+                </li>
+                <li class="center-nav-ftmoble js-d-map"><img src="__PUBLIC__/static/images/mobile/title-ft-mobile_03.png" alt=""/></li>
+                <li class="li-nav-ftmoble mr js-d-contact">
+                    <span class="icon-nav-ftmoble"><img src="__PUBLIC__/static/images/mobile/icon-ft-mobile_05.png" alt=""/></span>
+                    <span class="txt-nav-ftmoble">联系我们</span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="__PUBLIC__/static/js/mobile/init-mobile.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/js/mobile/dialog-mobile.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/js/mobile/navigation-mobile.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/js/mobile/banner-mobile.js"></script>
+</div>
+<script type="text/javascript" src="__PUBLIC__/static/js/mediaScreen.js"></script>
+</body>
+</html>

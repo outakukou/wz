@@ -1,0 +1,80 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+<title>设置密码</title>
+<link type="text/css" rel="stylesheet" href="/Public/static/css/base.css"/>
+<link type="text/css" rel="stylesheet" href="/Public/static/css/module.css"/>
+<link type="text/css" rel="stylesheet" href="/Public/static/css/login.css"/>
+<link type="text/css" rel="stylesheet" href="/Public/static/css/jhon_dialog.css"/>
+<!--<script type="text/javascript" src="/Public/static/js/jquery.js"></script>-->
+<script type="text/javascript" src="/Public/static/js/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+
+
+    <div class="container-login">
+        <div class="header">
+            <div class="logo"><img src="/Public/static/images/logo-regg_03.png" alt=""/></div>
+            <div class="poster-page"><img src="/Public/static/images/poster_07.png" alt=""/></div>
+        </div>
+        <div class="main">
+            <form action="/index.php/Home/Member/add" method="POST" name="formUser">
+                <ul class="l-form-login">
+                    
+                    <li class="li-form-login">
+                        <input class="itxt-form-login js-password" name="password" type="password" placeholder="请设置您的密码" />
+                    </li>
+                    <li class="li-form-login">
+                        <input class="itxt-form-login js-repassword" name="repassword" type="password" placeholder="确认您的密码" />
+                    </li>
+                    <li class="submit-form-login">
+                        <input class="btn-submit-regis" type="submit" value="创建微站" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <footer class="footer">
+            <p class="txt-footer-login">请扫二维码关注我们的公众号<br />了解我们的最新动态及功能</p>
+        </footer>
+    </div>
+
+<script type="text/javascript">
+        var $dialogC=$('<div class="mask-dialog"></div>'+
+                        '<div class="mod-checktip-dialog">'+
+
+                            '<div class="bd-checktip-dialog">'+
+                                '<div class="tip-checktip-dialog">密码不能为空<br />或2次密码不一致</div>'+
+                                
+                            '</div>'+
+                        '</div>');
+
+        
+
+        $('.btn-submit-regis').bind('click',function(e){
+            var passwordVal=$('.js-password').val(),
+                repasswordVal=$('.js-repassword').val();
+                
+            if( passwordVal=='' || repasswordVal=='' || passwordVal !=repasswordVal){
+                
+                e.preventDefault();
+                $('body').append($dialogC);
+                
+                    
+                    function close(){
+                        $('.mask-dialog').remove();
+                        $('.mod-checktip-dialog').remove();
+                    };
+                    setInterval(close, 2000);  
+                    
+
+                
+            }
+        });
+
+
+    </script>
+</body>
+</html>

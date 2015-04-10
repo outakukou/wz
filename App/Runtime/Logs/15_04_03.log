@@ -1,0 +1,895 @@
+[ 2015-04-03T18:57:08+08:00 ] 192.168.1.126 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.137656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.192223s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+
+[ 2015-04-03T18:57:10+08:00 ] 192.168.1.126 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.667981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.668092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024795s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.034522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.034607s ]
+
+[ 2015-04-03T18:57:27+08:00 ] 192.168.1.112 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+
+[ 2015-04-03T18:57:27+08:00 ] 192.168.1.112 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2015-04-03T18:57:30+08:00 ] 192.168.1.126 /index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.184048s ]
+SQL: SELECT * FROM `wei_member` WHERE ( mobile='1' ) LIMIT 1   [ RunTime:0.114528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+
+[ 2015-04-03T18:57:31+08:00 ] 192.168.1.126 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.019147s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001563s ]
+
+[ 2015-04-03T18:57:36+08:00 ] 192.168.1.126 /index.php/Home/Member/lst
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.007897s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.001179s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2015-04-03T18:57:37+08:00 ] 192.168.1.112 /index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002097s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002389s ]
+SQL: SELECT * FROM `wei_member` WHERE ( mobile='1' ) LIMIT 1   [ RunTime:0.000574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+
+[ 2015-04-03T18:57:38+08:00 ] 192.168.1.112 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002755s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2015-04-03T18:57:47+08:00 ] 192.168.1.126 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428058673217
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002480s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-04-03T18:57:50+08:00 ] 192.168.1.112 /index.php/Home/Member/lst
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002358s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2015-04-03T18:58:15+08:00 ] 192.168.1.126 /index.php/Home/Member/edit?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002412s ]
+SQL: select * from `wei_member` where id = 4 [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000432s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000626s ]
+NOTIC: [8] Undefined variable: info D:\weizhan\App\Runtime\Cache\Home\24a8b027f7b82f7a6e9d68d5445e7517.php 第 220 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001513s ]
+
+[ 2015-04-03T18:58:55+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428058747930
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002337s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002398s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2015-04-03T18:59:42+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428058794993
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.012285s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2015-04-03T18:59:46+08:00 ] 192.168.1.112 /index.php/Product/Product/ajaxZan?id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002058s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002413s ]
+SQL: update wei_product set click_good = click_good+1 where id=3 [ RunTime:0.000423s ]
+SQL: SELECT `click_good` FROM `wei_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2015-04-03T18:59:48+08:00 ] 192.168.1.112 /index.php/Product/Product/ajaxZan?id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002405s ]
+SQL: update wei_product set click_good = click_good+1 where id=7 [ RunTime:0.000459s ]
+SQL: SELECT `click_good` FROM `wei_product` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2015-04-03T18:59:52+08:00 ] 192.168.1.112 /index.php/Product/Product/ajaxZan?id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002372s ]
+SQL: update wei_product set click_good = click_good+1 where id=3 [ RunTime:0.000406s ]
+SQL: SELECT `click_good` FROM `wei_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2015-04-03T18:59:53+08:00 ] 192.168.1.112 /index.php/Product/Product/ajaxZan?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002322s ]
+SQL: update wei_product set click_good = click_good+1 where id=2 [ RunTime:0.000409s ]
+SQL: SELECT `click_good` FROM `wei_product` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2015-04-03T18:59:54+08:00 ] 192.168.1.112 /index.php/Product/Product/ajaxZan?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002031s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002501s ]
+SQL: update wei_product set click_good = click_good+1 where id=2 [ RunTime:0.000465s ]
+SQL: SELECT `click_good` FROM `wei_product` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2015-04-03T18:59:54+08:00 ] 192.168.1.112 /index.php/Product/Product/ajaxZan?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002015s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002584s ]
+SQL: update wei_product set click_good = click_good+1 where id=1 [ RunTime:0.000459s ]
+SQL: SELECT `click_good` FROM `wei_product` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2015-04-03T18:59:57+08:00 ] 192.168.1.112 /index.php/Product/Product/ajaxZan?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002010s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002372s ]
+SQL: update wei_product set click_good = click_good+1 where id=1 [ RunTime:0.000412s ]
+SQL: SELECT `click_good` FROM `wei_product` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2015-04-03T19:00:14+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428058827607
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002446s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-04-03T19:00:18+08:00 ] 192.168.1.112 /index.php/Product/Product/add
+ERR: 模板不存在:./App/Product/View/Product/add.html
+
+[ 2015-04-03T19:00:19+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428058832082
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002223s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.006362s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.001177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001424s ]
+
+[ 2015-04-03T19:00:39+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:00:41+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:00:43+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:00:46+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:00:48+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:00:51+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:00:53+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:00:58+08:00 ] 192.168.1.112 /index.php/Home/Member/edit?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.037646s ]
+SQL: select * from `wei_member` where id = 4 [ RunTime:0.001241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: info D:\weizhan\App\Runtime\Cache\Home\24a8b027f7b82f7a6e9d68d5445e7517.php 第 220 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-04-03T19:01:04+08:00 ] 192.168.1.112 /index.php/Home/Member/editpsw?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: info D:\weizhan\App\Runtime\Cache\Home\673a3df7b642943819935a9beddb31c2.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-04-03T19:03:36+08:00 ] 192.168.1.112 /index.php/Home/Member/lst
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002610s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000541s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2015-04-03T19:03:49+08:00 ] 192.168.1.112 /index.php/Home/Member/edit?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002511s ]
+SQL: select * from `wei_member` where id = 4 [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: info D:\weizhan\App\Runtime\Cache\Home\24a8b027f7b82f7a6e9d68d5445e7517.php 第 220 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2015-04-03T19:04:19+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428059071669
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002338s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002440s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2015-04-03T19:05:44+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428059156975
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002516s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2015-04-03T19:06:18+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428059191406
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002406s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-04-03T19:06:21+08:00 ] 192.168.1.112 /index.php/Product/Product/ajaxZan?id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002287s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002369s ]
+SQL: update wei_product set click_good = click_good+1 where id=3 [ RunTime:0.000422s ]
+SQL: SELECT `click_good` FROM `wei_product` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2015-04-03T19:06:45+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428059218660
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.003754s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000743s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2015-04-03T19:06:54+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428059227627
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.003449s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-04-03T19:06:59+08:00 ] 192.168.1.112 /index.php/Product/Product/add
+ERR: 模板不存在:./App/Product/View/Product/add.html
+
+[ 2015-04-03T19:07:00+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428059233511
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002376s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2015-04-03T19:07:06+08:00 ] 192.168.1.112 /index.php/Company/Company/js/menu.js
+ERR: 非法操作:js
+
+[ 2015-04-03T19:07:24+08:00 ] 192.168.1.112 /index.php/Company/Company/js/menu.js
+ERR: 非法操作:js
+
+[ 2015-04-03T19:07:30+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428059263511
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002356s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2015-04-03T19:07:46+08:00 ] 192.168.1.112 /index.php/Company/Company/js/menu.js
+ERR: 非法操作:js
+
+[ 2015-04-03T19:10:19+08:00 ] 192.168.1.112 /index.php/Company/Company/js/menu.js
+ERR: 非法操作:js
+
+[ 2015-04-03T19:16:00+08:00 ] 192.168.1.102 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+
+[ 2015-04-03T19:16:00+08:00 ] 192.168.1.102 /index.php/Home/Login/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2015-04-03T19:16:11+08:00 ] 192.168.1.102 /index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.003426s ]
+SQL: SELECT * FROM `wei_member` WHERE ( mobile='1' ) LIMIT 1   [ RunTime:0.000631s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+
+[ 2015-04-03T19:16:12+08:00 ] 192.168.1.102 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002487s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2015-04-03T19:16:29+08:00 ] 192.168.1.102 /index.php/Home/Member/lst
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002347s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002573s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2015-04-03T19:17:20+08:00 ] 192.168.1.112 /index.php/Company/Company/js/menu.js
+ERR: 非法操作:js
+
+[ 2015-04-03T19:17:26+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:17:28+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:17:30+08:00 ] 192.168.1.112 /index.php/News/Information/detail-news.html
+ERR: 非法操作:detail-news
+
+[ 2015-04-03T19:19:16+08:00 ] 192.168.1.112 /index.php/Company/Company/js/menu.js
+ERR: 非法操作:js
+
+[ 2015-04-03T19:19:32+08:00 ] 192.168.1.112 /index.php/News/Information/lst?callback=success_jsonpCallback&_=1428059985072
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002498s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+ERR: 非法操作:lst
+
+[ 2015-04-03T19:19:55+08:00 ] 192.168.1.112 /index.php/News/Information/lst?callback=success_jsonpCallback&_=1428060008347
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+ERR: 非法操作:lst
+
+[ 2015-04-03T19:21:24+08:00 ] 192.168.1.112 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002302s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002650s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2015-04-03T19:21:42+08:00 ] 192.168.1.112 /index.php/Home/Member/lst
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002068s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002631s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2015-04-03T19:22:10+08:00 ] 192.168.1.112 /index.php/Product/Product/lst?callback=success_jsonpCallback&_=1428060143482
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002291s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+NOTIC: [2048] Declaration of Product\Model\ProductModel::_after_insert() should be compatible with that of Think\Model::_after_insert() D:\weizhan\App\Product\Model\ProductModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `wei_product` [ RunTime:0.002448s ]
+SQL: SELECT * FROM `wei_product` ORDER BY id desc  [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: clientip D:\weizhan\App\Runtime\Cache\Product\b69b7bc7eee18ee23371e39f02f797ef.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2015-04-03T19:22:51+08:00 ] 192.168.1.112 /index.php/Home/Index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\weizhan\App\Home\Controller\BaseController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002461s ]
+SQL: SELECT * FROM `wei_member` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-04-03T19:22:54+08:00 ] 192.168.1.112 /index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+
+[ 2015-04-03T19:23:09+08:00 ] 192.168.1.112 /index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.003751s ]
+SQL: SELECT * FROM `wei_member` WHERE ( mobile='111' ) LIMIT 1   [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+
+[ 2015-04-03T19:23:11+08:00 ] 192.168.1.112 /index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+SQL: SHOW COLUMNS FROM `wei_member` [ RunTime:0.002593s ]
+SQL: SELECT * FROM `wei_member` WHERE ( mobile='111' ) LIMIT 1   [ RunTime:0.000528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+

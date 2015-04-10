@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>管理中心 - 推荐位列表 </title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Styles/main.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/datepicker/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/datepicker/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/datepicker/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/datepicker/datepicker_zh_cn.js"></script>
+</head>
+<body>
+<h1>
+    <span class="action-span"><a href="__CONTROLLER__/add">添加推荐位</a></span>
+    <span class="action-span1"><a href="#">管理中心</a></span>
+    <span id="search_id" class="action-span1"> - 推荐位列表 </span>
+    <div style="clear:both"></div>
+</h1>
+<form method="post" action="__CONTROLLER__/bdel" name="listForm">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+            	<th width="5"><input id="selAll" type="checkbox" /></th>
+            	            		<th>推荐位名称</th>
+            	            		<th>推荐位的类型</th>
+            	                <th>操作</th>
+            </tr>
+            <?php foreach ($data as $k => $v): ?>            <tr class="datatr">
+            	<td align="center"><input type="checkbox" name="delid[]" value="<?php echo $v['id']; ?>" /></td>
+            	            		<td><?php echo $v['pos_name']; ?></td>
+            	            		<td><?php echo $v['pos_type']; ?></td>
+            	                <td align="center">
+	                <a href="__CONTROLLER__/edit/id/<?php echo $v['id']; ?>" title="编辑">编辑</a> |
+	                <a href="__CONTROLLER__/del/id/<?php echo $v['id']; ?>" onclick="return confirm('确定要删除吗？');" title="移除">移除</a> 
+                </td>
+            </tr>
+            <?php endforeach; ?>            <tr>
+            	<td><input type="submit" value="删除所选" /></td>
+                <td align="right" nowrap="true" colspan="3">
+                    <?php echo $page; ?>                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<div id="footer"></div>
+</body>
+</html>
+<script>
+// 为第一个全选的复选框绑定一个点击事件
+$("#selAll").click(function(){
+	// 1. 先获取当前被点击的按钮的选中状态
+	var chk = $(this).attr("checked");
+	// 2. 先中其他所有的复选框
+	var others = $("input[name='delid[]']");
+	// 3. 先状态相同
+	if(chk)
+		others.attr("checked", "checked");
+	else
+		others.removeAttr("checked");
+});
+$("tr.datatr").mouseover(function(){
+	$(this).addClass("mouseon");
+});
+$("tr.datatr").mouseout(function(){
+	$(this).removeClass("mouseon");
+});
+</script>

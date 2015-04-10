@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <title>61微站</title>
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/static/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/static/css/module.css"/>
+    <script type="text/javascript" src="__PUBLIC__/static/js/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <div class="container-blue">
+        <div class="mod-sub-article pt10">
+            <span class="time-sub-article"><?php echo addymd($data['addtime']);?></span>
+            <span class="praise-sub-article"><img src="__PUBLIC__/static/images/icon-sub-company_06.png" alt=""/><?php echo $data['click_good'];?></span>
+            <span class="attention-sub-article"><img src="__PUBLIC__/static/images/icon-sub-company_03.png" alt=""/><?php echo $data['click'];?></span>
+        </div>
+        <div class="hd-article-wz">
+            <h2 class="title-article-wz">公司名称：<?php echo $data['title'];?></h2>
+        </div>
+<!--        <div class="poster-article-wz"><img src="__PUBLIC__/static/images/poster-company_03.jpg" alt=""/></div>
+        <div class="bd-article-wz">
+            <h3 class="title-bd-wz">公司概述：</h3>
+            <p class="text-bd-wz">北京六十一秒科技有限公司是一家集聚各类互联网金融创新人才、顶级技术开发人才、创新策划人才共同打造的全新的新兴科技公司。公司依托互联网为载体，以专业化的技术、高尖端的科技产品，服务于广大企业及个人用户，作为一家资金雄厚、人脉广泛的高端专业互联网科技公司，六十一秒科技为企业提供APP设计与开发、WEB设计与开发、VI设计、用户界面设计和数字化营销策划等多种信息产品和服务,公司重视创新技术，结合市场所需,为了解决各行各业市场营销人员现在面临的各种销售难题而投巨资研发的一款营销神器-微站。这是一款基于移动终端的应用工具,让销售变得更简单高效。</p>
+        </div>
+        <div class="poster-article-wz"><img src="__PUBLIC__/static/images/poster-company_06.jpg" alt=""/></div>
+        <div class="bd-article-wz">
+            <h3 class="title-bd-wz">企业文化：</h3>
+            <p class="text-bd-wz">北京六十一秒科技有限公司是一家集聚各类互联网金融创新人才、顶级技术开发人才、创新策划人才共同打造的全新的新兴科技公司。公司依托互联网为载体，以专业化的技术、高尖端的科技产品，服务于广大企业及个人用户，作为一家资金雄厚、人脉广泛的高端专业互联网科技公司，六十一秒科技为企业提供APP设计与开发、WEB设计与开发、VI设计、用户界面设计和数字化营销策划等多种信息产品和服务,公司重视创新技术，结合市场所需,为了解决各行各业市场营销人员现在面临的各种销售难题而投巨资研发的一款营销神器-微站。这是一款基于移动终端的应用工具,让销售变得更简单高效。</p>
+        </div>-->
+        <!--<div class="poster-article-wz"><img src="__PUBLIC__/static/images/poster-company_08.jpg" alt=""/></div>-->
+        <div class="bd-article-wz">
+            <h3 class="title-bd-wz"></h3>
+            <!--<p class="text-bd-wz">人才优势、创新优势、团队优势、服务优势、行业优势、经验优势与品牌优势这七大优势，从而铸就六十一秒最卓越的企业形象。</p>-->
+            <p class="text-bd-wz"><?php echo $data['contents']?></p>
+        </div>
+        <span class="tcode-bd-card"><img src="__PUBLIC__/static/images/tcode-card_03.jpg" alt=""/></span>
+        <p class="tip-tcode-card">扫描二维码关注我</p>
+    </div>
+</body>
+</html>

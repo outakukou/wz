@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>管理中心 - <?php echo $config['tableCnName']; ?>列表 </title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Styles/main.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/datepicker/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/datepicker/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/datepicker/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/datepicker/datepicker_zh_cn.js"></script>
+</head>
+<body>
+<h1>
+    <span class="action-span"><a href="__CONTROLLER__/add">添加<?php echo $config['tableCnName']; ?></a></span>
+    <span class="action-span1"><a href="#">管理中心</a></span>
+    <span id="search_id" class="action-span1"> - <?php echo $config['tableCnName']; ?>列表 </span>
+    <div style="clear:both"></div>
+</h1>
+<?php 
+	// 接收排序字段和排序方式默认是 id desc
+	$ob = I('get.ob', 'id');
+	$ow = I('get.ow', 'desc'); 
+?>
+<?php if($config['search']): ?>
+<div class="form-div">
+    <form method="GET" action="" name="searchForm">
+    	<?php foreach ($config['search'] as $k => $v): ?>
+    	<p>
+	   		<?php echo isset($config['fields'][$v[0]]['text']) ? $config['fields'][$v[0]]['text'] : $v[3]; ?>：
+	   		<?php if($v[1] == 'normal'): ?>
+	   			<input type="text" name="<?php echo $v[0]; ?>" size="30" value="<?php echo "<?php echo I('get.{$v[0]}'); ?>"; ?>" />
+	   		<?php elseif(strpos($v[1], 'between') === 0):
+	   				$_arr = explode(',', $v[2]);
+	   		 ?>
+	   			从 <input id="<?php echo $_arr[0]; ?>" type="text" name="<?php echo $_arr[0]; ?>" size="15" value="<?php echo "<?php echo I('get.{$_arr[0]}'); ?>"; ?>" /> 
+		    		到 <input id="<?php echo $_arr[1]; ?>" type="text" name="<?php echo $_arr[1]; ?>" size="15" value="<?php echo "<?php echo I('get.{$_arr[1]}'); ?>"; ?>" />
+	   		<?php endif; ?>
+	    </p>
+	    <?php endforeach; ?>
+	    <p>
+		    排序方式： 
+		    <input type="radio" <?php if($ow == 'asc') echo 'checked="checked"'; ?> value="asc" name="ow" />升序  
+		    <input type="radio" <?php if($ow == 'desc') echo 'checked="checked"'; ?> value="desc" name="ow" />降序
+	    </p>
+	    <p>
+	   		 <input type="submit" value=" 搜索 " class="button" />
+	    </p>
+    </form>
+</div>
+<?php endif; ?>
+<form method="post" action="__CONTROLLER__/bdel" name="listForm">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="3" cellspacing="1">
+            <tr>
+            	<th width="5"><input id="selAll" type="checkbox" /></th>
+            	<?php 
+            	$len = count($config['fields']);
+            	foreach ($config['fields'] as $k => $v): ?>
+            		<th><?php echo $v['text']; ?></th>
+            	<?php endforeach; ?>
+                <th>操作</th>
+            </tr>
+            <?php echo '<?php foreach ($data as $k => $v): ?>'; ?>
+            <tr class="datatr">
+            	<td align="center"><input type="checkbox" name="delid[]" value="<?php echo "<?php echo \$v['id']; ?>"; ?>" /></td>
+            	<?php foreach ($config['fields'] as $k => $v): ?>
+            		<td><?php 
+            		if(isset($v['bizRule']))
+            		{
+            			echo "<?php echo {$v['bizRule']} ?>"; 
+            		}
+            		else 
+            			echo "<?php echo \$v['$k']; ?>"; 
+            		?></td>
+            	<?php endforeach; ?>
+                <td align="center">
+	                <a href="__CONTROLLER__/edit/id/<?php echo "<?php echo \$v['id']; ?>"; ?>" title="编辑">编辑</a> |
+	                <a href="__CONTROLLER__/del/id/<?php echo "<?php echo \$v['id']; ?>"; ?>" onclick="return confirm('确定要删除吗？');" title="移除">移除</a> 
+                </td>
+            </tr>
+            <?php echo '<?php endforeach; ?>'; ?>
+            <tr>
+            	<td><input type="submit" value="删除所选" /></td>
+                <td align="right" nowrap="true" colspan="<?php echo $len+1; ?>">
+                    <?php echo '<?php echo $page; ?>'; ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<div id="footer"></div>
+</body>
+</html>
+<script>
+// 为第一个全选的复选框绑定一个点击事件
+$("#selAll").click(function(){
+	// 1. 先获取当前被点击的按钮的选中状态
+	var chk = $(this).attr("checked");
+	// 2. 先中其他所有的复选框
+	var others = $("input[name='delid[]']");
+	// 3. 先状态相同
+	if(chk)
+		others.attr("checked", "checked");
+	else
+		others.removeAttr("checked");
+});
+<?php 
+foreach ($config['search'] as $k => $v){
+	if($v[1] == 'betweenTime')
+	{
+		$_arr = explode(',', $v[2]);
+		echo "$('#{$_arr[0]}').datepicker();";
+		echo "$('#{$_arr[1]}').datepicker();";
+	}
+}
+?>
+$("tr.datatr").mouseover(function(){
+	$(this).addClass("mouseon");
+});
+$("tr.datatr").mouseout(function(){
+	$(this).removeClass("mouseon");
+});
+</script>
