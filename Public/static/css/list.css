@@ -1,0 +1,144 @@
+.l-list {
+    width:100%;
+    padding-top:15px;
+}
+.l-list:after {
+    display:block;
+    content:'';
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.li-list {
+    width:100%;
+}
+
+.mod-li-list,.mode-li-list {
+    width:86%;
+    margin:auto;
+    padding:4% 8px;
+    background:#fff;
+    border-radius:10px;
+}
+.mod-li-list:after {
+    content:'';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.mode-li-list {
+    width:100%;
+    border-radius:0;
+}
+.mode-li-list:after {
+    content:'';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.poster-li-list {
+    width:25%;
+    margin:3% 0 0 0;
+    float:left;
+}
+.poster-li-list img {
+    width:100%;
+}
+
+
+.title-li-list,.text-li-list,.more-li-list {
+    display:block;
+    margin-left:30%;
+    width:70%;
+    line-height:1.6em;
+    font-size:.8em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color:#333;
+}
+.title-li-list {
+    height:1.6em;
+}
+.title-li-list .fwb {
+    font-weight:bold;
+}
+
+.text-li-list {
+    max-height:3.2em;
+}
+.text-li-list .fwb {
+    font-weight:bold;
+}
+.more-li-list {
+
+}
+.link-li-list {
+    text-decoration:underline;
+    color:#1ec1df;
+}
+
+/*banner-list*/
+.banner-list {
+    width:100%;
+}
+.banner-list img {
+    width:100%;
+}
+
+/*mod-show-list*/
+.item-li-list {
+
+}
+.item-li-list:after {
+    display:block;
+    content:'';
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.tip-li-list,.text2-li-list {
+    display:inline-block;
+    float:left;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    line-height:1.6em;
+    font-size:.8em;
+    color:#333;
+}
+.tip-li-list {
+    width:24%;
+    padding-left:4%;
+    height:1.6em;
+    letter-spacing:1px;
+    font-weight:bold;
+}
+.text2-li-list {
+    width:68%;
+    max-height:3.2em;
+    font-weight:normal;
+    font-size:0.8em;
+}
+.more2-li-list {
+    margin-left:28%;
+}
+.more2-li-list .link-li-list {
+    font-size:.8em;
+}
+
+
+/*粒子*/
+.ptb2 {
+    padding-top:2px;
+    padding-bottom:2px;
+}
+.mt15 {
+    margin-top:15px;
+}
+.ml0 {
+    margin-left:0;
+}
+.pt0 {
+    padding-top:0;
+}

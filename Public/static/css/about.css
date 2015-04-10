@@ -1,0 +1,137 @@
+.title-about-wz {
+    width:60%;
+    margin:auto;
+    padding:20px 0 5px;
+}
+.title-about-wz img {
+    width:100%;
+}
+.text-about-wz,.text-about-page {
+    width:90%;
+    margin:auto;
+    text-indent:2em;
+    letter-spacing:1px;
+    line-height:1.8em;
+    color:#333;
+    font-size:1em;
+}
+.text-about-page {
+    color:#0b77bb;
+    padding-bottom:20px;
+}
+.poster-about-wz {
+    display:block;
+    width:50%;
+    margin:20px auto 40px;
+}
+.l-about-wz {
+    width:90%;
+    margin:auto;
+}
+.l-about-wz:after {
+    content:'';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.li-about-wz {
+    width:48%;
+    height:2.8em;
+    margin-bottom:15px;
+    float:left;
+    background:#6b7b89;
+    border:2px solid #1ec1e0;
+    line-height:2.8em;
+    text-align:center;
+    font-size:1em;
+}
+.link-about-wz {
+    display:block;
+    text-decoration:none;
+    color:#fff;
+}
+.logo-about-wz {
+    width:70%;
+    margin:30px auto 20px;
+}
+.logo-about-wz img {
+    width:100%;
+}
+
+
+
+.mod-about-wz {
+    padding-bottom:30px;
+    width:90%;
+    margin:auto;
+}
+.mod-about-wz:after {
+    content:'';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.text-mod-about,.box-poster-about {
+    position:relative;
+    float:left;
+}
+.text-mod-about {
+    width:42%;
+    margin-top:5.4em;
+    line-height:1.8em;
+    font-size:1em;
+    color:#0b77bb;
+}
+.box-poster-about {
+    width:54%;
+}
+.poster-mod-about {
+    display:block;
+    width:100%;
+}
+.poster-mod-about img {
+    width:100%;
+}
+
+.w1-img-about {
+    width:48%;
+}
+.w2-img-about {
+    width:40%;
+}
+.w3-img-about {
+    width:46%;
+}
+.w4-img-about {
+    width:46%;
+    margin-left:8%;
+}
+
+
+/*粒子*/
+.txt-img-lst {
+    margin-left:4%;
+}
+.txt-img-feed {
+    margin-left:6%;
+}
+.txt-img-tcode {
+    margin-left:8%;
+}
+.txt-img-write {
+    margin-left:8%;
+}
+.fr {
+    float:right;
+}
+.fl {
+    float:left;
+}
+.mt0 {
+    margin-top:0;
+}
+.pb0 {
+    padding-bottom:0;
+}

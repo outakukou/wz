@@ -1,0 +1,38 @@
+.box-enter-detail {
+    display:block;
+    width:100%;
+    padding:15px 0 40px 0;
+}
+.box-enter-detail:after {
+    display:block;
+    content:'';
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.blue-enter-detail,.pink-enter-detail {
+    display:block;
+    float:right;
+    width:30%;
+    height:2.3em;
+    margin-right:5%;
+    letter-spacing:1px;
+    line-height:2.3em;
+    text-align:center;
+    font-size:.8em;
+    color:#fff;
+    border-radius:3px;
+    box-shadow:1px 1px 3px #666;
+}
+.blue-enter-detail {
+    background:#1ec1df;
+}
+.pink-enter-detail {
+    background:#df598b;
+    letter-spacing:2px;
+}
+
+/*粒子*/
+.mt40 {
+    margin-top:40px;
+}

@@ -1,0 +1,66 @@
+.mod-gojob {
+    width:100%;
+}
+.hd-gojob {
+    width:100%;
+}
+.tip-hd-gojob {
+    padding-top:10px;
+    line-height:1.8em;
+    text-align:center;
+    font-size:0.8em;
+    color:#ff0300;
+}
+
+
+.bd-gojob {
+    width:100%;
+}
+.l-bd-gojob {
+    width:90%;
+    padding:6px 5% 0;
+}
+.li-bd-gojob {
+    margin-bottom:12px;
+}
+.li-bd-gojob:after {
+    content:'.';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+
+.label-bd-gojob {
+    display:block;
+    float:left;
+    width:25%;
+    height:40px;
+    padding-right:5%;
+    text-align:right;
+    line-height:40px;
+    letter-spacing:2px;
+    font-size:0.8em;
+    color:#333;
+}
+.risk-bd-gojob {
+    padding-left:4px;
+    color:#ff0300;
+}
+.itxt-bd-gojob,.textarea-bd-gojob {
+    display:block;
+    float:left;
+    width:65%;
+    padding:0 4px;
+    border:1px solid #999;
+    border-radius:5px;
+    font-size:0.8em;
+    color:#333;
+}
+.itxt-bd-gojob {
+    height:38px;
+    line-height:38px;
+}
+.textarea-bd-gojob {
+    line-height:21px;
+}

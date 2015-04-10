@@ -1,0 +1,50 @@
+.mod-card {
+    width:100%;
+}
+.hd-card {
+    background:#1ec1df;
+}
+.bd-card {}
+
+.title-hd-card {
+    height:2.4em;
+    line-height:2.4em;
+    text-align:center;
+    letter-spacing:3px;
+    font-weight:normal;
+    font-size:1.2em;
+    color:#fff;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.l-bd-card {
+    padding-top:10px;
+}
+.l-bd-card:after {
+    display:block;
+    content:'';
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.li-bd-card {
+    width:100%;
+}
+.title-bd-card {
+    height:3em;
+    padding-left:5%;
+    line-height:3em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-weight:normal;
+    font-size:1em;
+    color:#333;
+}
+.img-bd-card {
+    display:block;
+    width:90%;
+    margin:auto;
+}
+.img-bd-card img {
+    width:100%;
+}

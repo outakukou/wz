@@ -1,0 +1,218 @@
+.mod-personal-edit {
+    width:100%;
+    position:relative;
+}
+.bg-personal-edit {
+    width:100%;
+}
+.bg-personal-edit img {
+    width:100%;
+}
+
+.box-personal-edit {
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.content-personal-edit {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.poster-personal-edit {
+    display:block;
+    position:absolute;
+    z-index:3;
+    top:60%;
+    left:10%;
+    width:20%;
+    margin-top:-28%;
+}
+.poster-personal-edit img {
+    width:100%;
+    border:1px solid #eee;
+    border-radius:50%;
+    box-shadow:1px 1px 6px #333;
+}
+.group-btn-edit {
+    position:absolute;
+    z-index:4;
+    top:50%;
+    left:40%;
+    width:40%;
+    height:auto;
+    margin-top:-35%;
+}
+.btn-personal-edit {
+    display:block;
+    width:100%;
+    height:2.4em;
+    margin-bottom:10px;
+    background:#1ec1df;
+    box-shadow:1px 1px 6px #333;
+    border-radius:6px;
+    letter-spacing:2px;
+    text-align:center;
+    line-height:2.4em;
+    font-size:1em;
+    color:#fff;
+}
+.btn-personal-edit a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+}
+
+.tip-card-edit {
+    width:100%;
+    border-bottom:1px solid #ccc;
+    text-align:center;
+    line-height:3.4em;
+    font-size:1em;
+
+}
+.l-card-edit {
+
+}
+.li-card-edit {
+    width:100%;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+.li-card-edit:after {
+    content:'';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.subli-double-message {
+    padding-top:10px;
+}
+.subli-double-message:after {
+    content:'';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+
+.label-card-edit,.text-card-edit,.box-sexbox-edit {
+    display:inline-block;
+    height:3.4em;
+    line-height:3.4em;
+    letter-spacing:1px;
+    font-size:1em;
+}
+.label-card-edit {
+    float:left;
+    padding-left:10%;
+    color:#333;
+}
+.text-card-edit {
+    float:right;
+    text-align:right;
+    padding-right:10%;
+    color:#999;
+}
+.t-row {
+    line-height:1.7em;
+}
+
+.itxt-card-edit {
+    display:block;
+    position:absolute;
+    z-index:9;
+    right:10%;
+    top:4px;
+    width:56%;
+    height:2.8em;
+    padding:0 4px;
+    line-height:2.8em;
+    font-size:1em;
+    color:#333;
+    border:1px solid #999;
+    border-radius:4px;
+    display:none;
+
+}
+
+.intro-card-edit {
+    width:100%;
+    padding:8px 0;
+    background:#e7f6f9;
+}
+.intro-card-edit:after {
+    content:'';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+}
+.spm-card-edit {
+    display:block;
+    float:left;
+    width:20%;
+    padding-left:10%;
+}
+.link-intro-edit {
+    display:block;
+    float:right;
+    width: 30%;
+    margin-right:10%;
+    background:#1ec1df;
+    border-radius:4px;
+    box-shadow:1px 1px 6px #333;
+    color:#fff;
+    font-size:0.8em;
+    height:34px;
+    line-height:34px;
+    text-align: center;
+}
+
+.box-sexbox-edit {
+    float:right;
+    width:52%;
+    padding-right:10%;
+}
+.sub-card-edit {
+    float:right;
+    color:#333;
+    padding-left:10%;
+}
+.mod-checkbox-wz {
+    margin:10px 0 0 10%;
+}
+
+.risk-card-edit {
+    padding-left:4px;
+    color:#fd0101;
+}
+.risk-tip {
+    padding:0 4px;
+    color:#fd0101;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

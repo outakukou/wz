@@ -1,0 +1,45 @@
+.mask-dialog {
+    position:fixed;
+    z-index:999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:.6;
+}
+.mod-checktip-dialog {
+    position:fixed;
+    z-index:1000;
+    top:20px;
+    left:50%;
+    margin-left:-50%;
+}
+
+.tip-checktip-dialog {
+    width:80%;
+    margin:150px 0px 90px 90px;
+    padding:20px 0 40px 0;
+    background:#fff;
+    line-height:1.5em;
+    text-align:center;
+    font-size:1em;
+    border-radius:6px;
+    color:#1ec1df;
+}
+.btn-checktip-dialog {
+    display:block;
+    width:50%;
+    height:40px;
+    margin:16px auto 0;
+    background: #1ec1df;
+    color:#fff;
+    font-size:1em;
+    line-height:40px;
+    text-align:center;
+    border-radius:4px;
+    box-shadow:1px -1px 6px #333;
+    letter-spacing:4px;
+    border:1px solid #1fcceb;
+}
+
